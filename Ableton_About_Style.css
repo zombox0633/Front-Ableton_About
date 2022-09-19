@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body{
+    /*position: relative;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    overflow-x: hidden;
+}
+div{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.page-about_header{
+    height: 730px;
+    background: url("https://ableton-production.imgix.net/about/header.jpg?fit=crop&amp;auto=format&amp;fm=jpg");
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    min-height: calc(100vh - 120px);
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-left: 8.333vw;
+    margin-right: 8.333vw;
+    margin-bottom: 8.333vw;
+}
+.page-about_header-text{
+    position: absolute;
+    font-weight: bold;
+    font-size: 104px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    /*width: 430px;
+    height: 104px;*/
+    cursor:context-menu;
+    color: #FD5948;
+}
+
+
+.page-about_text{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 133.333px;
+}
+.body-text h1{
+    font-size: 1.875rem;
+    line-height: 1.4;
+
+}
+.body-text a{
+    color: #0000ff;
+}
+
+
+.page-about_collage{
+    position: relative;
+    width: 1600px;
+    height: 933.31px;
+    margin-bottom: 133.333px;
+    /*margin-top: 133.333px;*/
+}
+.background-lemonade{
+    background-color: #fbffa7;
+}
+.page-about_collage_background-products{
+    position: absolute;
+    width: 933.333px;/*58.33333vw*/
+    height: 933.333px;/*58.33333vw*/
+    right: -150px;/*41.66667vw*/
+    top: 0;
+    z-index: 0;
+}
+
+.page-about_collage_products1{
+    position: absolute;
+    width: 666.666px;
+    height: 666.666px;
+    background: url("https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    display: inline-block;
+    vertical-align: middle;
+    left: 300px;/* 8.33333vw*/
+    top: 150px;
+    z-index: 1;
+}
+.page-about_collage_products2{
+    position: absolute;
+    width: 533.33px;/*33.333vw*/
+    height: 400px;/*25vw*/
+    background-image: url("https://ableton-production.imgix.net/about/photo-2.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    display: inline-block;
+    vertical-align: middle;
+    top: 300px;
+    right: -30px;
+    z-index: 1;
+}
+
+
+.background-spearmint{
+    background-color: #b6ffc0;
+}
+.page-about_collage_background-people{
+    position: absolute;
+    width: 933.333px;/*58.33333vw*/
+    height: 933.333px;/*75vw*/
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.page-about_collage_cntainer_media-people{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: 200px;
+    z-index: 1;
+}
+.page-about_collage_cntainer_media-people1{
+    position: absolute;
+    width: 533.333px;
+    height: 400px;
+    background: url("https://ableton-production.imgix.net/about/photo-3.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    top: 30px;
+}
+.page-about_collage_cntainer_media-people2{
+    position: absolute;
+    width: 533.333px;
+    height: 400px;
+    background: url("https://ableton-production.imgix.net/about/photo-4.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    top: 470px;
+}
+.page-about_collage_cntainer_media-people3{
+    position: absolute;
+    width: 666.666px;
+    height: 666.666px;
+    background-image: url("https://ableton-production.imgix.net/about/photo-5.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    display: inline-block;
+    vertical-align: middle;
+    top: 120px;
+    right: 100px;
+    z-index: 1;
+}
+
+
+.page-about_media_image-large{
+    position: relative;
+    height: 750px;
+    background: url("https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&dpr=2&fit=crop&fm=jpg&ixjsv=1.1.3&q=50&w=1333");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    margin-left: 8.333vw;
+    margin-right: 8.333vw;
+    margin-bottom: 8.333vw;
+}
+
+
+.background-lavender{
+    background-color:#d5b3ff;
+}
+.page-about_collage_background-improving{    
+    position: absolute;
+    height: 933.333px;
+    width: 933.333px;
+    right: 175px;
+    z-index: 0;
+}
+
+.page-about_collage_media-improving1{
+    position: relative;
+    width: 533.333px;
+    height: 400px;
+    background: url("https://ableton-production.imgix.net/about/photo-6-a.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    display: inline-block;
+    vertical-align: middle;
+    top: 150px;
+    left: 350px;
+    z-index: 1;
+}
+.page-about_collage_media-improving2{
+    position: relative;
+    width: 666.666px;
+    height: 666.666px;
+    background: url("https://ableton-production.imgix.net/about/photo-7.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    display: inline-block;
+    vertical-align: middle;
+    top: 150px;
+    right: -500px;
+    z-index: 1;
+}
+
+
+.page-about_jobs-teaser_media{
+    position: relative;
+    width: 41.66667vw;
+    height: 41.66667vw;
+    background: url("https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    display: inline-block;
+    vertical-align: middle;
+    left: 200px;
+    z-index: 1;
+}
+
+.background-periwinkle{
+    background-color: #b1c5ff;
+}
+.page-about_jobs-teaser_text{
+    position: relative;
+    width: 41.66667vw;
+    height: 41.66667vw;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 50px ;
+    right: -190px; 
+    z-index: 1;
+}
+
+.page-about_jobs-teaser_text-wrapper{
+    display: table;
+    width: 100%;
+    height: 80%;
+}
+.page-about_jobs-teaser_text-wrapper .body-text{
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.page-about_jobs-teaser_text-wrapper a{
+    display: block;
+    margin-top: 1em;
+}
