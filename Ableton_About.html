@@ -6,11 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn more about Ableton</title>
     <link rel="icon" href="/image/ghost-regular-24.png"type="image/icon type">
-    <link rel="stylesheet" href="Ableton_About_Style.css">
+    <link rel="stylesheet" href="Ableton_About_Style_Main-NAV.css">
+    <link rel="stylesheet" href="Ableton_About_Style_Main.css">
+    <link rel="stylesheet" href="Ableton_About_Style-Footer.css">
 </head>
 <body>
     <div id="main" class="main">
-        <header></header>
+        <header class="main-nav" id="Main-nav">
+            <nav aria-label="primary">
+                <a class="main-nav_logo" href="">
+                    <svg class="main-nav_logo-image" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2c-4.963 0-9 4.038-9 9v8h.051c.245 1.691 1.69 3 3.449 3 1.174 0 2.074-.417 2.672-1.174a3.99 3.99 0 0 0 5.668-.014c.601.762 1.504 1.188 2.66 1.188 1.93 0 3.5-1.57 3.5-3.5V11c0-4.962-4.037-9-9-9zm7 16.5c0 .827-.673 1.5-1.5 1.5-.449 0-1.5 0-1.5-2v-1h-2v1c0 1.103-.897 2-2 2s-2-.897-2-2v-1H8v1c0 1.845-.774 2-1.5 2-.827 0-1.5-.673-1.5-1.5V11c0-3.86 3.141-7 7-7s7 3.14 7 7v7.5z"></path><circle cx="9" cy="10" r="2"></circle><circle cx="15" cy="10" r="2"></circle></svg>
+                    <svg class="main-nav_logo-image"xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M3 11v8h.051c.245 1.692 1.69 3 3.449 3 1.174 0 2.074-.417 2.672-1.174a3.99 3.99 0 0 0 5.668-.014c.601.762 1.504 1.188 2.66 1.188 1.93 0 3.5-1.57 3.5-3.5V11c0-4.962-4.037-9-9-9s-9 4.038-9 9zm6 1c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm6-4c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path></svg>
+                </a>
+                <div class="main-nav_primary-wrapper">
+                    <ul class="main-nav_link">
+                        <li class="main-nav_link-item"><a href="">Live</a></li>
+                        <li class="main-nav_link-item"><a href="">Push</a></li>
+                        <li class="main-nav_link-item"><a href="">Link</a></li>
+                        <li class="main-nav_link-item"><a href="">Shop</a></li>
+                        <li class="main-nav_link-item"><a href="">Packs</a></li>
+                        <li class="main-nav_link-item"><a href="">Help</a></li>
+                        <li class="main-nav_link-item">
+                            <button class="main-nav_more-button" onclick="mainnav_more_visiblefunction()">
+                                <span>More</span>
+                                <span class="main-nav_change change_plus" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 118, 77, 1);"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
+                                </span>
+                                <span class="main-nav_change change_minus" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 118, 77, 1);"><path d="M5 11h14v2H5z"></path></svg>
+                                </span>
+                            </button>
+                        </li>
+                        <li class="main-nav_link-item main-nav_link-item_try"><a href="">Try Live for free</a></li>
+                        <li class="main-nav_link-item main-nav_link-item_account"><a href="">Log in or register</a></li>
+                    </ul>
+                    <div class="main-nav_more_hidden" id="h_main-nav_more">
+                        <section class="main-nav_section">
+                            <h3 class="main-nav_section-heading">More on Ableton.com&#58;</h3>
+                            <ul class="main-nav_link-list">
+                                <li class="main-nav_link-item main-nav_section-link-item"><a href="http://">Blog</a></li>
+                                <li class="main-nav_link-item main-nav_section-link-item"><a href="http://">Ableton for the Classroom</a></li>
+                                <li class="main-nav_link-item main-nav_section-link-item"><a href="http://">Ableton for Colleges and Univesities</a></li>
+                                <li class="main-nav_link-item main-nav_section-link-item"><a href="http://">Certified Training</a></li>
+                                <li class="main-nav_link-item main-nav_section-link-item is-active"><a href="http://">About Ableton</a></li>
+                                <li class="main-nav_link-item main-nav_section-link-item"><a href="http://">Jobs</a></li>
+                                <li class="main-nav_link-item main-nav_section-link-item"><a href="http://">Apprenticeships</a></li>
+                            </ul>
+                        </section>
+                        <section class="main-nav_section main-nav_section_pt">
+                            <h3 class="main-nav_section-heading">More from Ableton&#58;</h3>
+                            <div class="main-nav_sildeable-wrapper">
+                                <ul class="main-nav_row">
+                                    <li class="main-nav_col"><a href=""></a>
+                                        <div>
+                                            <h4>Loop</h4>
+                                            <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                                        </div>
+                                    </a></li>
+                                    <li class="main-nav_col"><a href=""></a>
+                                        <div>
+                                            <h4>Learning Music</h4>
+                                            <p>Learn the fundamentals of music making right in your browser.</p>
+                                        </div>
+                                    </a></li>
+                                    <li class="main-nav_col"><a href=""></a>
+                                        <div>
+                                            <h4>Learning Synths</h4>
+                                            <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                                        </div>
+                                    </a></li>
+                                    <li class="main-nav_col"><a href=""></a>
+                                        <div>
+                                            <h4>Making Music</h4>
+                                            <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-nav_separator"></div>
+            <nav aria-label="secondary">
+                <ul class="main-nav_link main-nav_link_secondary">
+                    <li class="main-nav_link-item is-active"><a href="">About</a></li>
+                    <li class="main-nav_link-item"><a href="">Jobs</a></li>
+                    <li class="main-nav_link-item"><a href="">Apprenticeships</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="page">
             <main>
                 <div class="page-about">
@@ -36,8 +121,9 @@
                             <p>We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.</p>
                         </div>
                     </div>
-                    <div class="page-about_media">
-                        video
+                    <div class="page-about_media"> <!-- youtube-video -->
+                        <iframe class="youtube-video" src="https://www.youtube.com/embed/9SbnhgjeyXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="page-about_media_caption">Why Ableton - Juanpe Bolivar</p>
                     </div>
                     <div class="page-about_text">
                         <div class="body-text">
@@ -94,7 +180,7 @@
                             <div class="page-about_jobs-teaser_text-wrapper">
                                 <div class="body-text">
                                     <h1>We&rsquo;re really proud of the work we&rsquo;ve done so far. But there&rsquo;s so much more to come. If you&rsquo;d like to be a part of it, please join us.
-                                        <a href="">See latest jobs ></a>
+                                        <a class="has-arrow" href="">See latest jobs</a>
                                     </h1>
                                 </div>
                             </div>
@@ -102,10 +188,165 @@
                     </div>
                 </div>
             </main>
-            <footer>
-                
+            <footer class="main-footer">
+                <div class="main-footer_separator"></div>
+                <div class="main-footer_container">
+                    <div class="main-footer_content">
+                        <div class="main-footer_row">
+                            <div class="main-footer_col">
+                                <img class="main-footer_basics" src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-wordmark.c025e3df71b3.svg" alt="Ableton">
+                            </div>
+                        </div>
+                        <div class="main-footer_row">
+                            <div class="main-footer_col main-footer_col-md">
+                                <h3 class="main-footer_h3">Sign up to newsletter</h3>
+                                <div>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</div>
+                                <div>
+                                    <form class="main-footer_newsletter_form" action="">
+                                        <div class="main-footer_form-group">
+                                            <div class="main-footer_form-field">
+                                                <input name="email" type="email" placeholder="Email Address">
+                                            </div>
+                                            <input class="main-footer_button" type="submit" value="Sign up">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="main-footer_col main-footer_col-sm">
+                                <ul class="main-footer_list">
+                                    <li>
+                                        <a class="has-arrow" href="">Register Live or Push</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="">About Ableton</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="">Jobs</a>
+                                    </li>
+                                </ul>
+                                <ul class="main-footer_social">
+                                    <li class="main-footer_social-listitem">
+                                        <a class="main-footer_social-buttom main-footer_social-buttom-facebook" href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg> 
+                                        </a>
+                                    </li>
+                                    <li class="main-footer_social-listitem">
+                                        <a class="main-footer_social-buttom main-footer_social-buttom-twitter" href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li class="main-footer_social-listitem">
+                                        <a class="main-footer_social-buttom main-footer_social-buttom-youtube" href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li class="main-footer_social-listitem">
+                                        <a class="main-footer_social-buttom main-footer_social-buttom-instagram" href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-footer_col main-footer_col-sm">
+                                <h3 class="main-footer_h3">Education</h3>
+                                <ul class="main-footer_list">
+                                    <li>
+                                        <a class="has-arrow" href="">Offers for students and teachers</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="">Ableton for the Classroom</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="">Ableton for Colleges and Universities</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-footer_row">
+                            <div class="main-footer_col main-footer_col-sm">
+                                <h3 class="main-footer_h3">Community</h3>
+                                <ul class="main-footer_list">
+                                    <li>
+                                        <a class="has-arrow" href="">Find Ableton User Groups</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="">Find Certified Training</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="">Become a Certified Trainer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-footer_col main-footer_col-sm">
+                                <h3 class="main-footer_h3">Distributors</h3>
+                                <ul class="main-footer_list">
+                                    <li>
+                                        <a class="has-arrow" href="">Find Distributors</a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="">Try Push in-store</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-footer_col main-footer_col-md">
+                                <h3 class="main-footer_h3">Language and Location</h3>
+                                <div class="main-footer_language-selector">
+                                    <div class="main-footer_secondary_seclector">
+                                        <div class="form_element_field">
+                                            <form action="" method="post">
+                                                <select class="js-language" name="language">
+                                                    <option value="en">English</option>
+                                                    <option value="de">Deutsch</option>
+                                                    <option value="fr">Français</option>
+                                                    <option value="ja">日本語</option>
+                                                    <option value="zh-cn">简体中文</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="main-footer_secondary_seclector">
+                                        <div class="form_element_field">
+                                            <form class="js-location" action="" method="post">
+                                                <select class="country_code" name="language">
+                                                    <option value>Please choose</option>
+                                                    <option label="Common Countries">
+                                                        <option value="us">United States</option>
+                                                        <option value="uk">United Kingdom</option>
+                                                        <option value="fr">France</option>
+                                                        <option value="de">Germany</option>
+                                                        <option value="ca">Canada</option>
+                                                        <option value="jp">Japan</option>
+                                                        <option value="cn">China</option>
+                                                    </option>
+                                                    <option label="All Countries/Regions">
+                                                    </option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-footer_row">
+                            <div class="main-footer_col main-footer_col-full">
+                                <div class="main-footer_secondary_link-list">
+                                    <a class="main-footer_secondary_link-list_item" href="">Contact Us</a>
+                                    <a class="main-footer_secondary_link-list_item" href="">Press Resources</a>
+                                    <a class="main-footer_secondary_link-list_item" href="">Legal Info</a>
+                                    <a class="main-footer_secondary_link-list_item" href="">Privacy Policy</a>
+                                    <a class="main-footer_secondary_link-list_item" href="">Cookie Settings</a>
+                                    <a class="main-footer_secondary_link-list_item" href="">Imprint</a>
+                                </div>
+                                <div class="main-footer_secondary_signature">
+                                    <img class="main-footer_secondary_signature_logo" src="/image/ghost-regular-24.png" alt="">
+                                    <span class="main-footer_secondary_signature_labe">Made in Berlin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
+    <script src="Ableton_About_JavaScript.js"></script>
 </body>
 </html>
