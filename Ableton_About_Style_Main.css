@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* 1px = 0.063rem*/
+/* 16px = 1em*/
 body{
     /*position: relative;*/
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 16px; 
     font-weight: normal;
     line-height: 1.5;
     margin: 0;
@@ -29,10 +32,11 @@ a{
 
 .main{
     display: grid;
-    grid-template-columns: auto 1600px auto;
+    grid-template-columns: auto 100rem auto; /*1600px*/
     grid-template-areas: 
     ". main-nav ."
     ". main-page .";
+    margin: 0;
 }
 
 .main-nav{
@@ -54,15 +58,15 @@ a{
 }
 
 
-.page-about_header{ /*แก้ไขรูป*/
-    height: 730px;
+.page-about_header{
+    height: 45.625rem; /*730px*/
     background: url("https://ableton-production.imgix.net/about/header.jpg?fit=crop&amp;auto=format&amp;fm=jpg");
     position: relative;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 120px); 
     /*margin-left: auto;
     margin-right: auto;*/
     margin-left: 8.333vw;
@@ -72,11 +76,11 @@ a{
 .page-about_header-text{
     position: absolute;
     font-weight: bold;
-    font-size: 104px;
+    font-size: 6.5rem; /*104px*/
     top: 50%;
     left: 50%;
-    margin-top: -100px;
-    margin-left: -100px;
+    margin-top: -5rem; /*-80px*/
+    margin-left: -10rem; /*-160px*/
     /*width: 430px;
     height: 104px;*/
     cursor:context-menu;
@@ -85,10 +89,10 @@ a{
 
 
 .page-about_text{
-    width: 800px;
+    width: 50rem; /*800px*/
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 133.333px;
+    margin-bottom: 8.333rem; /*133.333px*/
 }
 .body-text h1{
     font-size: 1.875rem;
@@ -102,9 +106,9 @@ a{
 
 .page-about_collage{
     position: relative;
-    width: 1600px;
-    height: 933.31px;
-    margin-bottom: 133.333px;
+    width: 100rem; /*1600px*/
+    height: 58.332rem; /*933.31px*/
+    margin-bottom: 8.333rem; /*133.333px*/
     /*margin-top: 133.333px;*/
 }
 .background-lemonade{
@@ -112,58 +116,59 @@ a{
 }
 .page-about_collage_background-products{
     position: absolute;
-    width: 933.333px;/*58.33333vw*/
-    height: 933.333px;/*58.33333vw*/
-    right: 0;/*41.66667vw*/
+    width: 58.332rem; /*933.31px*/
+    height: 58.332rem; /*933.31px*/
+    right: 0;
     top: 0;
     z-index: 0;
 }
 
 .page-about_collage_products1{
     position: absolute;
-    width: 666.666px;
-    height: 666.666px;
+    width: 41.667rem; /*666.666px*/
+    height: 41.667rem; /*666.666px*/
     background: url("https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
     display: inline-block;
     vertical-align: middle;
-    left: 100px;/* 8.33333vw*/
-    top: 150px;
+    left: 6.25rem; /*100px*/
+    top: 9.375rem; /*150px*/
     z-index: 1;
 }
 .page-about_collage_products2{
     position: absolute;
-    width: 533.33px;/*33.333vw*/
-    height: 400px;/*25vw*/
+    width: 33.333rem; /*533.33px*/
+    height: 25rem; /*400px*/
     background-image: url("https://ableton-production.imgix.net/about/photo-2.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
     display: inline-block;
     vertical-align: middle;
-    top: 300px;
-    right: 150px;
+    top: 18.75rem; /* 300px*/
+    right: 9.375rem; /*150px*/
     z-index: 1;
 }
 
 .page-about_media{
-    margin-bottom: 133.333px;
+    margin-bottom: 8.333rem; /*133.333px*/
 }
 .youtube-video{
     position: relative;
-    width: 666px;
-    height: 375px;
-    left: 450px;
+    width: 41.625rem; /*666px*/
+    height: 23.438rem; /*375px*/
+    left: 28.125rem; /*450px*/
 }
 .page-about_media_caption{
     position: absolute;
     font-size: 0.875rem;
     font-weight: bold;
     line-height: 1.5;
+    width: 100%;
     margin-top: 0.5em;
-    margin-left: 450px;
+    margin-left: 28.125rem; /*450px*/
 }
 
 
@@ -172,8 +177,8 @@ a{
 }
 .page-about_collage_background-people{
     position: absolute;
-    width: 933.333px;/*58.33333vw*/
-    height: 933.333px;/*75vw*/
+    width: 58.333rem; /*933.333px*/
+    height: 58.333rem; /*933.333px*/
     left: 0;
     top: 0;
     z-index: 0;
@@ -183,48 +188,48 @@ a{
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    left: 200px;
+    left: 12.5rem; /*200px*/
     z-index: 1;
 }
 .page-about_collage_cntainer_media-people1{
     position: absolute;
-    width: 533.333px;
-    height: 400px;
+    width: 33.333rem; /*533.333px*/
+    height: 25rem; /*400px*/
     background: url("https://ableton-production.imgix.net/about/photo-3.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
-    top: 30px;
+    top: 1.875rem; /*30px*/
 }
 .page-about_collage_cntainer_media-people2{
     position: absolute;
-    width: 533.333px;
-    height: 400px;
+    width: 33.333rem; /*533.333px*/
+    height: 25rem; /*400px*/
     background: url("https://ableton-production.imgix.net/about/photo-4.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
-    top: 470px;
+    top: 29.375rem; /*470px*/
 }
 .page-about_collage_cntainer_media-people3{
     position: absolute;
-    width: 666.666px;
-    height: 666.666px;
+    width: 41.667rem; /*666.666px*/
+    height: 41.667rem; /*666.666px*/
     background-image: url("https://ableton-production.imgix.net/about/photo-5.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
     display: inline-block;
     vertical-align: middle;
-    top: 120px;
-    right: 100px;
+    top: 7.5rem; /*120px*/
+    right: 6.25rem; /*100px*/
     z-index: 1;
 }
 
 
 .page-about_media_image-large{
     position: relative;
-    height: 750px;
+    height: 46.875rem; /*750px*/
     background: url("https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&dpr=2&fit=crop&fm=jpg&ixjsv=1.1.3&q=50&w=1333");
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,53 +245,53 @@ a{
 }
 .page-about_collage_background-improving{    
     position: absolute;
-    height: 933.333px;
-    width: 933.333px;
-    left: 320px;
+    width: 58.333rem; /*933.333px*/
+    height: 58.333rem; /*933.333px*/
+    left: 21.875rem; /*350px*/
     z-index: 0;
 }
 
 .page-about_collage_media-improving1{
     position: relative;
-    width: 533.333px;
-    height: 400px;
+    width: 33.333rem; /*533.333px*/
+    height: 25rem; /*400px*/
     background: url("https://ableton-production.imgix.net/about/photo-6-a.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
     display: inline-block;
     vertical-align: middle;
-    top: 150px;
-    left: 150px;
+    top: 9.375rem; /*150px*/
+    left: 9.375rem; /*150px*/
     z-index: 1;
 }
 .page-about_collage_media-improving2{
     position: relative;
-    width: 666.666px;
-    height: 666.666px;
+    width: 41.667rem; /*666.666px*/
+    height: 41.667rem; /*666.666px*/
     background: url("https://ableton-production.imgix.net/about/photo-7.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
     display: inline-block;
     vertical-align: middle;
-    top: 150px;
-    right: -395px;
+    top: 9.375rem; /*150px*/
+    right: -24.688rem; /*-395px*/
     z-index: 1;
 }
 
 
 .page-about_jobs-teaser_media{
     position: relative;
-    width: 666.666px;
-    height: 666.666px;
+    width: 41.667rem; /*666.666px*/
+    height: 41.667rem; /*666.666px*/
     background: url("https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:50% 50%;
     display: inline-block;
     vertical-align: middle;
-    left: 110px;
+    left: 8.75rem; /*140px*/
     z-index: 1;
 }
 
@@ -295,12 +300,12 @@ a{
 }
 .page-about_jobs-teaser_text{
     position: relative;
-    width: 666.666px;
-    height: 666.666px;
+    width: 41.667rem; /*666.666px*/
+    height: 41.667rem; /*666.666px*/
     display: inline-block;
     vertical-align: middle;
-    padding-left: 50px ;
-    right: -100px; 
+    padding-left: 3.125rem ; /*50px*/
+    right: -8.125rem; /*-130px*/
     z-index: 1;
 }
 

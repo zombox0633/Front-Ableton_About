@@ -94,7 +94,7 @@
     position: relative;
     font-size: 1rem;
     line-height: 1.5;
-    top: 1px;
+    top: 0.063rem; /*1px*/
     margin-left: 0.625rem;
 }
 
@@ -151,6 +151,7 @@
     margin-bottom: 0;
 }
 .main-nav_col{
+    position: relative;
     list-style: none;
     width: 25%;
     min-width: 15em;
@@ -160,17 +161,28 @@
 
 
 .main-nav_separator{
+    position: relative;
     display: block;
     height: 0;
-    border-top: 2px solid #eee;
+    border-top: 0.125rem solid #eee; /*2px*/
 }
 
-
-.main-nav_link_secondary{
-    width: 100%;
+.main-nav_link_secondary{  
+    max-width: 100rem;
     font-size: 1rem;
     line-height: 1.5;
     height: 4.25rem;
-    padding: 1.25rem 2.5rem;
-    
+    padding-top: 1.25rem ;
+    padding-bottom: 1.25rem ;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.main-nav_secondary_scroll{
+    position: sticky;
+    top: 0;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.9);
 }
